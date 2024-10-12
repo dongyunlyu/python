@@ -1,0 +1,49 @@
+##a = int(input())
+##b = int(input())
+##      
+##print("%d월 %d일"%(a,d))
+
+##a=float(input())
+##b=float(input())
+##print("왼쪽 시력 : %.1f, 오른쪽 시력 : %.1f"%(a,b))
+
+##a = 'Python'
+##b =' is fun'
+##print(a+b)
+##print(a*2)
+
+##a = [1, 2, 3]
+##b=[4, 5, 6]
+##print(a+b)
+##print(a*3)
+
+##a = "Carpe Diem!"
+##print(a[6:11])
+
+##a = "Carpe Diem!"
+##print(a[6:])
+
+##a = "Carpe Diem!"
+##print(a[:5])
+
+##a = 'I Love You'
+##print(a. count('o'))
+##print(a.find('Y'), a.index('Y'))
+##print('.'.join(a))
+##print(a.split())
+##print(a.replace('Love','like'))
+##print(a.upper(),a.lower())
+
+##a= 'Hello World'
+##print(a.count('l'))
+
+##a = 'python'
+##print(a.find('p'))
+
+##a = 'oh!my!gad'
+##print(a.split('!'))
+
+##num = input('주민 번호 : ' )
+##a = num[2:4]
+##b = num[4:6]
+##print('생일 : %s월 %s일' %(b,c))
