@@ -1,0 +1,116 @@
+##x = int(input('x : '))
+##y = int(input('y : '))
+##if x > y :
+##    print('크다!')
+##elif x < y:
+##    print('작다')
+##else:
+##    print('같다!')
+
+##from random import *
+##x = ['월','화','수','목','금','토','일']
+##r = randint(0,6)
+##print(x[r])
+
+##from random import *
+##a = ['월','화','수','목','금','토','일']
+##print(choice([True, False]))
+##print(choice(a))
+
+##from random import *
+##a = [1,2,3,4,5]
+##print(choices(a, [1,1,10,1,1]))
+
+##from random import *
+##a= [1,2,3,4,5]
+##print(choices(a, [1,2,1,1,5], k = 3))
+
+##from random import*
+##a=[0,1,2,3,4,5]
+##r = choice(a)
+##if r == 0 :
+##    print('Loss')
+##else:
+##    print('No. %d Spot!' %r)
+
+##from random import *
+##import turtle
+##g = turtle.Turtle(shape = "turtle")
+##g.write("씨큐브 코딩의 타자 게임!", True, font = ("Arial", 20, "bold"))
+##h = turtle.Turtle()
+##h.fillcolor("yellow")
+##h.begin_fill()
+##h.penup()
+##h.goto(250,-250)
+##h.pendown()
+##h.forward(120)
+##h.left(90)
+##h.forward(120)
+##h.left(90)
+##h.forward(120)
+##h.left(90)
+##h.forward(120)
+##h.left(90)
+##h.end_fill()
+##h.fillcolor("red")
+##h.begin_fill()
+##h.penup()
+##h.goto(250,-130)
+##h.pendown()
+##h.left(60)
+##h.forward(120)
+##h.right(120)
+##h.forward(120)
+##h.right(120)
+##h.forward(120)
+##h.end_fill()
+##l = turtle.Turtle()
+##l.penup()
+##l.goto(-250,-250)
+##l.pendown()
+##l.write(0)
+##l.goto(0,-250)
+##l.write(50)
+##l.goto(250,-250)
+##l.write(100)
+##t = turtle.Turtle(shape = "turtle")
+##t.penup()
+##t.goto(-270,-250)
+##t.color("red","green")
+##g = turtle.Turtle(shape = "turtle")
+##g.write("씨큐브 코딩의 타자 게임!", True, font = ("Arial", 20, "bold"))
+##fruit = ["apple", "banana", "strawberry", "watermelon", "mandarin", "peach", "grapes", "Orange","pear","Kiwi"]
+##score = 0
+##n = randint(5,10)
+##for i in range(n):
+##    s = choice(fruit)
+##    word = turtle.textinput("fruit",  '%s(%d)' % (s, i+1, n))
+##    if word == s:
+##        score += 1
+##rate = score / n * 100
+##g.penup()
+##g.goto(0, -50)
+##g.pendown()
+##g.write("%d/%d번 성공!" %(score,n), True, font + ("Arial", 15, "bold"))
+##g.penup()
+##g.goto(0, -100)
+##g.pemdown()
+##g.write("정확도 : %.1f%%" %(rate), True, font + ("Arial", 15 "bold"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
