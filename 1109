@@ -1,0 +1,156 @@
+##from random import *
+##import turtle
+##g = turtle.Turtle(shape = "turtle")
+##g.write("씨큐브 코딩의 타자 게임!", True, font = ("Arial", 20, "bold"))
+##h = turtle.Turtle()
+##h.fillcolor("yellow")
+##h.begin_fill()
+##h.penup()
+##h.goto(250,-250)
+##h.pendown()
+##h.forward(120)
+##h.left(90)
+##h.forward(120)
+##h.left(90)
+##h.forward(120)
+##h.left(90)
+##h.forward(120)
+##h.left(90)
+##h.end_fill()
+##h.fillcolor("red")
+##h.begin_fill()
+##h.penup()
+##h.goto(250,-130)
+##h.pendown()
+##h.left(60)
+##h.forward(120)
+##h.right(120)
+##h.forward(120)
+##h.right(120)
+##h.forward(120)
+##h.end_fill()
+##l = turtle.Turtle()
+##l.penup()
+##l.goto(-250,-250)
+##l.pendown()
+##l.write(0)
+##l.goto(0,-250)
+##l.write(50)
+##l.goto(250,-250)
+##l.write(100)
+##t = turtle.Turtle(shape = "turtle")
+##t.penup()
+##t.goto(-270,-250)
+##t.color("red","green")
+##g = turtle.Turtle(shape = "turtle")
+##g.write("씨큐브 코딩의 타자 게임!", True, font = ("Arial", 20, "bold"))
+##fruit = ["apple", "banana", "strawberry", "watermelon", "mandarin", "peach", "grapes", "Orange","pear","Kiwi"]
+##score = 0
+##n = randint(5,10)
+##for i in range(n):
+##    s = choice(fruit)
+##    word = turtle.textinput("fruit",  '%s(%d/%d)' % (s, i+1, n))
+##    if word == s:
+##        score += 1
+##rate = score / n * 100
+##g.penup()
+##g.goto(0, -50)
+##g.pendown()
+##g.write("%d/%d번 성공!" %(score,n), True, font = ("Arial", 15, "bold"))
+##g.penup()
+##g.goto(0, -100)
+##g.pendown()
+##g.write("정확도 : %.1f%%" % (rate), True, font = ("Arial", 15,"bold"))
+##distance = t.distance(l)/100 * rate
+##t.speed(1)
+##t.forward(distance)
+##if rate == 100:
+##    t.write("집에 데려다줘서 고마워!! ♬", False, "center", font = ("Arial", 15, "bold"))
+##    t.left(60)
+##    t.right(60)
+##    t.left(60)
+##    t.right(60)
+##elif rate >= 80:
+##      t.write("집이 코앞인데!! 한번만 더 시도해줘!! ", False, "center", font = ("Arial", 15, "normal"))
+##elif rate>= 50:
+##    t.write("집에 가고 싶어!! ㅠ0ㅠ ", False,"center", font = ("Arial",15,"normal"))
+##else :
+##    t.color("black")
+##    t.right(360)
+##    t.write("거북이가 쓰러졌어요 ㅠ_ㅠ ", False, "center",font = ("Arial", 15, "normal"))
+##turtle.done()
+
+##i = 1
+##while i <= 10:
+##    print(i,end = '')
+##    i+=1   
+
+##sum = 0
+##i = 1
+##while i <= 100 :
+##    sum += i
+##    i+= 1
+##print(sum)
+
+##i = 0
+##while i < 10 :
+##    i+=1
+##    if i % 2 == 0:
+##        continue
+##    print(i, end = ' ')
+
+##while True :
+##    ans = input ("Shall we close? (y/n) ")
+##    if ans == 'y' :
+##        print("the end")
+##        break
+
+##stamp = 0
+##while stamp < 10:
+##    stamp += 1
+##    print("스탬프 %d개 적립"% stamp)
+##    if stamp == 10:
+##        print("무료 음료 쿠폰 1개 증정")
+
+##i = 1
+##while i < 101:
+##    print(i,'')
+##    i+=1
+
+##i = 1
+##s = 0
+##a = int(input("정수 : "))
+##while  i <= a:
+##    s += i
+##    i+=1
+##print(s)
+
+##while True:   
+##    a = int(input("정수 : "))
+##    if a == 0:
+##        break
+
+##cut = 0
+##n = int(input("정수 입력 : "))
+##while n > 0:
+##    cut += 1
+##    n //= 10
+##print("자릿 수 : %d" % cut)
+
+##a = int(input("몇단? :"))
+##i = 1
+##while i <= 9:
+##    print("%d * %d = " % (a,i),a*i)
+##    i+=1
+
+##import random
+##i = random.randint(1,100)
+##
+##while True:
+##    a = int(input())
+##    if a < i:
+##        print("Up")
+##    elif a > i:
+##        print("Down")
+##    else:
+##        print("Correct!")
