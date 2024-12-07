@@ -1,0 +1,98 @@
+##def add(x, y) :
+##    s = x + y
+##    return s
+##result = add(10,20)
+##print(result)
+##print(add(10,10))
+##print(add(20,20))
+##print(add(30,30))
+##
+##def add(x, y) :
+##    s = x + y
+##    return s
+##
+##result = add(10, 20) + add(20,30)
+##print(result)
+##
+##def get_max(x) :
+##    if x > 0 :
+##        return True
+##    else :
+##        return False
+##x = int(input())
+##n = get_max(x)
+##print(n)
+##
+##def get_sum(a,n) :
+##    s = 0
+##    for i in range(a,n+1) :
+##        s+= i
+##    return s
+##a = int (input())
+##n = int(input())
+##print("%d부터 %d까지의 합은 %d입니다." % (a,n,get_sum(a,n)))
+##
+##def area(g,s) :
+##    return g*s
+##
+##g = int(input())
+##s = int(input())
+##n = area(g,s)
+##print(n)
+##
+##def area(a):
+##    return a*a*3.14
+##a = int(input())
+##print(area(a))
+##
+##def number(a) :
+##    if a % 2 == 0 :
+##        return "even"
+##    else :
+##        return "odd"
+##a = int(input())
+##print(number(a))
+##
+##def square(a,b):
+##    return a**b
+##a = int(input())
+##b = int(input())
+##print(square(a,b))
+##
+##def get_max(n) :
+##    max = 0
+##    for i in range(n) :
+##        xxxx = int(input())
+##        if xxxx > max :
+##            max = xxxx
+##    return max
+##n = int(input("Enter integer n : "))
+##print("max value :", get_max(n))
+##
+##def Login(i,p) :
+##    if i == 'Cube' and p == '1234' :
+##        return 1
+##    elif i == 'Cube' :
+##        return 2
+##    elif p == '1234' :
+##        return 3
+##    else :
+##        return 4 
+##def say(result) :
+##    if result == 1 :
+##        return 'Login Success'
+##    elif result == 2 :
+##        return 'Please check your PW.'
+##    elif result == 3 :
+##        return 'Please check your ID.'
+##    else :
+##        return 'Please check your ID and PW.'
+##i = input("ID : ")
+##p = input("PW : " )
+##print(say(Login(i,p)))
+##
+##
+##
+##
+##
+##
