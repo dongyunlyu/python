@@ -1,0 +1,84 @@
+##for i in range(2,10) :
+##    for j in range(1,10):
+##        print("%d x %d = %d" % (i,j,i*j))        
+##print()
+
+##from tkinter import *
+##
+##win = Tk()
+##label1 = Label(win,text = "one")
+##label2 = Label(win,text = "two")
+##label3 = Label(win, text = "three")
+##label1.pack()
+##label2.pack()
+##label3.pack()
+##win.mainloop()
+
+##from tkinter import *
+
+##win = Tk()
+##a = Label(win,text = "orange", width = 20, height = 3, relief = "solid")
+##b = Label(win,text = "banana",font = ("Elephant", 20), bg = "yellow")
+##c = Label(win,text = "apple",fg = 'red')
+##a.pack()
+##b.pack()
+##c.pack()
+##win.mainloop()
+
+##from tkinter import *
+##win = Tk()
+##img = PhotoImage(file = 'pizza.png')
+##lbl = Label(win,image = img)
+##lbl.pack()
+##a = Label(win,text = 'pizza' , bg = "yellow" , fg = 'red')
+##a.pack()
+##win.mainloop()
+    
+##from tkinter import *
+##win = Tk()
+##a = Button(win,text = "button")
+##a.pack()
+##win.mainloop()
+
+##from tkinter import *
+##win = Tk()
+##def click():
+##    if a['text'] == "hello" and a['bg'] == "orange" :
+##        a['text'] = "python"
+##        a['bg'] = "green"
+##    else :
+##        a['text'] = 'hello'
+##        a['bg'] = "orange"
+##a = Label(win,text = "hello", fg = "white", bg = "orange")
+##btn = Button(win,text = 'button', command = click)
+##a.pack()
+##btn.pack()
+##win.mainloop()
+
+##from tkinter import *
+##win = Tk()
+##def message(event) :
+##    lbl['text'] = entry.get()
+##entry = Entry(win)
+##entry.bind("<Return>", message)
+##entry.pack()
+##lbl = Label(win, text = "")
+##lbl.pack()
+##win.mainloop()
+
+##from tkinter import *
+##win = Tk()
+##win.title('grid')
+##a = Label(win,width = 10, height = 5, bg = "red")
+##b = Label(win,width = 10, height = 5, bg = "orange")
+##c = Label(win,width = 10, height = 5, bg = "yellow")
+##d = Label(win,width = 10, height = 5, bg = "green")
+##e = Label(win,width = 10, height = 5, bg = "blue")
+##f = Label(win,width = 10, height = 5, bg = "purple")
+##a.grid(row = 0, column = 0)
+##b.grid(row = 0, column = 1)
+##c.grid(row = 0, column = 2)
+##d.grid(row = 1, column = 0)
+##e.grid(row = 1, column = 1)
+##f.grid(row = 1, column = 2)
+##win.mainloop()
