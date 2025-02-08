@@ -1,0 +1,44 @@
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 300, height = 300, bg = "white")
+##canvas.pack()
+##canvas.create_oval(10,10,60,60,fill = "blue")
+##canvas.create_rectangle(100,10,160,60,fill = "yellow", outline="red")
+##canvas.create_polygon(200,110,130,190,260,190,fill = "red")
+##win.mainloop()
+
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 500, height = 500, bg = "white")
+##canvas.pack()
+##x1,y1 = 0,0
+##x2,y2 = 500,0
+##for i in range(10):
+##    canvas.create_line(x1,y1,x2,y2,width=3)
+##    y1 += 50
+##    y2 += 50
+##x1,y1 = 0,0
+##x2,y2 = 0,500
+##for i in range(10):
+##    canvas.create_line(x1,y1,x2,y2,width=3)
+##    x1 += 50
+##    x2 +=50
+##canvas.create_oval(100,100,400,400,fill = "blue",outline = "black")
+##canvas.create_oval(150,150,350,250,fill = "blue",outline = "black")
+##canvas.create_rectangle(50,50,400,250,fill="yellow",outline="black")
+##canvas.create_rectangle(150,50,300,450,fill="yellow",outline="black")
+##canvas.create_polygon(250,50,50,450,450,450,fill="red",outline="black")
+##canvas.create_polygon(100,50,100,450,400,450,fill="red",outline="black")
+
+##from tkinter import*
+##from random import*
+##def draw_shape(event) :
+##    color = ["black","white", "blue","red","green","yellow"]
+##    x1,y1 = event.x,event.y
+##    x2,y2 = x1 + randint(10, 70), y1 + randint(10,70)
+##    canvas.create_rectangle(x1, y1, x2, y2, fill = color[randint(0,5)])
+##win = Tk()
+##canvas = Canvas(win, width = 300, height = 300, bg = "white")
+##canvas.pack()
+##canvas.bind("<Double-Button-1>", draw_shape)
+##win.mainloop()
