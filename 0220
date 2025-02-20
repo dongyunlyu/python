@@ -1,0 +1,97 @@
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 100, height = 100, bg = "white")
+##canvas.pack()
+##canvas.create_oval(20,20,80,80, fill = "blue")
+
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 100, height = 100, bg = "white")
+##canvas.pack()
+##canvas.create_oval(30,30,70,50, fill = "blue")
+
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 100, height = 100, bg = "white")
+##canvas.pack()
+##canvas.create_rectangle(10,10,80,50, fill = "yellow")
+
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 100, height = 100, bg = "white")
+##canvas.pack()
+##canvas.create_rectangle(30,10,60,90, fill = "yellow")
+
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 100, height = 100, bg = "white")
+##canvas.pack()
+##canvas.create_polygon(50,10,90,90,10,90, fill = "red")
+
+##from tkinter import *
+##win = Tk()
+##canvas = Canvas(win, width = 100, height = 100, bg = "white")
+##canvas.pack()
+##canvas.create_polygon(20,10,80,90,20,90, fill = "red")
+
+##from tkinter import *
+##from random import*
+##def draw_shape(event) :
+##  color = ["black", "white", "blue", "red", "green", "yellow"]
+##  x1,y1 = event.x, event.y
+##  x2,y2 = x1 + randint(10,70), y1 + randint(10, 70)
+##  canvas.create_rectangle(x1,y1,x2,y2, fill = color[randint(0,5)])
+##win = Tk()
+##canvas = Canvas(win, width = 300, height = 300, bg = "white")
+##canvas.pack()
+##canvas.bind("<Double-Button-1>", draw_shape)
+##win.mainloop()
+
+##from tkinter import *
+##def draw_shape(event) :
+##  x1,y1 = event.x-25, event.y
+##  x2,y2 = x1 + 50, y1 + 50 
+##  canvas.create_oval(x1,y1,x2,y2, fill = "yellow")
+##win = Tk()
+##canvas = Canvas(win, width = 300, height = 300, bg = "white")
+##canvas.pack()
+##canvas.bind("<Double-Button-1>", draw_shape)
+##win.mainloop()
+
+##from tkinter import *
+##def draw_shape(event) :
+##  x1,y1 = event.x, event.y
+##  x2,y2 = x1 + 25, y1 + 25
+##  x3,y3 = x2 -50, y2
+##  canvas.create_polygon(x1,y1,x2,y2,x3,y3, fill = "green", outline = "black")
+##win = Tk()
+##canvas = Canvas(win, width = 300, height = 300, bg = "white")
+##canvas.pack()
+##canvas.bind("<Double-Button-1>", draw_shape)
+##win.mainloop()
+
+from tkinter import *
+pen_color = "black"
+pen_size = 2
+shape_size = 2
+shape_size = 10
+my_tool = "pen"
+fill_color = "white"
+w,h = 13,win = Tk()
+win.title("My paint")
+win.geometry("510x600+200+200")
+canvas = Canvas(win, width = 510,height = 470, bg = "white")4
+btn_w = Button(win,text = "white", bg = "white", wudtg = w, height = h, command = lambda : change_color("white"))
+btn_b = Button(win,text = "black", bg = "black", wudtg = w, height = h, command = lambda : change_color("black"))
+btn_blu = Button(win,text ="blue", bg = "blue", wudtg = w, height = h, command = lambda : change_color("blue"))
+btn_g = Button(win,text ="green", bg = "green", wudtg = w, height = h, command = lambda : change_color("green"))
+btn_y = Button(win,text ="yellow", bg = "yellow", wudtg = w, height = h, command = lambda : change_color("yellow"))
+btn_ = Button(win,text ="red",bg = "red", bg = "red", fg = "black", width = w, height = h, command = lambda : change_color("red"))
+btn_canvas = Button(win,text = "canvas\ncolor",bg = "white" fg = "black", width = w, height = h, command = lacbda : change_tool("canvas"))
+btn_pen = Button(win,text = "pen\ncolor",bg = "black", fg = "white", width = w, height = h, command = lacbda : change_tool("pen"))
+btn_fill = Button(win,text = "fill\color", bg = "white", fg = "black", whidth = w, height = h, command = lamda : cange_tool("shape"))
+btn_oval = Button(win,text = "O", bg = "white", width = w,height = h, command = lambda : change_tool("oval"))
+
+
+
+
