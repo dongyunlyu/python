@@ -1,0 +1,91 @@
+from tkinter import *
+pen_color = "black"
+pen_size = 2
+shape_color = "black"
+shape_size = 10
+tool = "pen"
+w,h = 16,2
+win = Tk()
+win.title("My paint")
+def change_tool(t):
+    global tool
+    tool = t
+def paint(event):
+    global pen_size, pen_color
+    x1,y1 = event.x, event.y
+    x2,y2 = x1 + pen_size, y1 + pen_size
+    canvas.create_line(x1, y1, x2, y2, fill = pen_color, width = pen_size)
+def draw_shape(event):
+    global shape_size, shape_color
+    x1,y1 = event.x, event.y
+    x2,y2 = x1 + shape_size, y1 + shape_size
+    if tool == "oval":
+        canvas.create_oval(x1, y1, x2, y2, fill = shape_color)
+    elif tool == "rect":
+        canvas.create_rectangle(x1, y1, x2, y2, fill = shape_color)
+    elif tool == "tri":
+        canvas.create_polygon(x1, y1, x1 - (shape_size / 2), y1 + shape_size, x1 + (shape_size / 2), y1 + shape_size, fill = shape_color)
+def change_size(btn):
+     global pen_size, shape_size
+     if tool == "pen":
+         if btn == "+":
+             pen_size += 5
+         elif btn == "-":
+            pen_size -= 5
+            if pen_size < 0:
+                pen_size = 0
+     else :
+        if btn == "+":
+            shape_size += 10
+        elif btn == "-":
+            shape_size -= 10
+            if shape_size < 0 :
+                shape_size = 0
+def change_color(color):
+    global pen_color, shape_color
+    if tool == "pen":
+        pen_color = color
+    elif tool == "canvas":
+        canvas["bg"] = color
+        btn_canvas["bg"] = color
+        if btn_canvas["bg"] == "black" or btn_canvas["bg"] == "blue" or btn_canvas["bg"] == "green":
+            btn_canvas["fg"] == "white"
+    else :
+        shape_color = color
+def clear_canvas():
+    canvas.delete("all")
+canvas = Canvas(win, width = 600,height = 600, bg = "white")
+btn_w = Button(win, text = "white", bg = "white", width = w, height = h, command = lambda : change_color("white"))
+btn_b = Button(win, text = "black", bg = "black", fg = "white", width = w, height = h, command = lambda : change_color("black"))
+btn_blu = Button(win, text ="blue", bg = "blue", fg = "white", width = w, height = h, command = lambda : change_color("blue"))
+btn_g = Button(win, text ="green", bg = "green", fg = "white", width = w, height = h, command = lambda : change_color("green"))
+btn_y = Button(win, text ="yellow", bg = "yellow", width = w, height = h, command = lambda : change_color("yellow"))
+btn_r = Button(win, text ="red", bg = "red", fg = "white", width = w, height = h, command = lambda : change_color("red"))
+btn_canvas = Button(win, text = "canvas\ncolor",bg = "white" ,fg = "black", width = w, height = h, command = lambda : change_tool("canvas"))
+btn_pen = Button(win, text = "pen\ncolor",bg = "white", fg = "black", width = w, height = h, command = lambda : change_tool("pen"))
+btn_fill = Button(win, text = "fill\ncolor", bg = "white", fg = "black", width = w, height = h, command = lambda : change_tool("shape"))
+btn_oval = Button(win, text = "○", bg = "white", width = w,height = h, command = lambda : change_tool("oval"))
+btn_rect = Button(win, text = "□", bg = "white", width = w,height = h, command = lambda : change_tool("rect"))
+btn_tri = Button(win, text = "△", bg = "white", width = w,height = h, command = lambda : change_tool("tri"))
+btn_m = Button(win, text = "-", bg = "white", width = w,height = h, command = lambda : change_size("-"))
+btn_c = Button(win, text = "clear", bg = "white", width = w, height = h, command = clear_canvas)
+btn_p = Button(win, text = "+", bg = "white", width = w,height = h, command = lambda : change_size("+"))
+canvas.grid(row = 0, column = 0,columnspan=5)
+btn_canvas.grid(row = 1, column = 0)
+btn_b.grid(row = 1, column = 1)
+btn_blu.grid(row = 1, column = 2)
+btn_g.grid(row = 1, column = 3)
+btn_p.grid(row = 1, column = 4)
+btn_pen.grid(row = 2,column = 0)
+btn_w.grid(row = 2, column = 1)
+btn_r.grid(row = 2, column = 2)
+btn_y.grid(row = 2, column = 3)
+btn_m.grid(row = 2, column = 4)
+btn_fill.grid(row = 3, column = 0)
+btn_oval.grid(row = 3, column = 1)
+btn_rect.grid(row = 3, column = 2)
+btn_tri.grid(row = 3, column = 3)
+btn_c.grid(row = 3, column = 4)
+win.bind("<B1-Motion>",paint)
+win.bind("<Double-Button-1>",draw_shape)
+win.mainloop()
